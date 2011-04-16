@@ -1,3 +1,4 @@
+<% cache(@todo) do %>
 <%= form_for(@todo) do |f| %>
   <% if @todo.errors.any? %>
     <div id="error_explanation">
@@ -30,4 +31,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+<% end %>
 <% end %>

@@ -1,3 +1,4 @@
+<% cache(@todos) do %>
 <h1>Listing todos</h1>
 
 <table>
@@ -27,3 +28,4 @@
 <br />
 
 <%= link_to 'New Todo', new_todo_path %>
+<% end %>
